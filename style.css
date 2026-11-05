@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --navy: #07101d;
+  --red: #e03a3e;
+  --ink: #111820;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: Inter, Arial, sans-serif;
+}
+
+.site-nav {
+  min-height: 78px;
+  background: #05080d;
+}
+
+
+
+
+.site-nav .nav-link {
+  color: #e8edf3;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.site-nav .nav-link:hover {
+  color: #ff5961;
+}
+
+.search-form {
+  max-width: 270px;
+}
+
+.search-form .form-control {
+  background: #121923;
+  border-color: #ffffff55;
+  color: white;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  min-height: 600px;
+  height: 72vh;
+  align-items: center;
+  color: white;
+  background:
+    linear-gradient(90deg, rgba(3, 8, 15, .9), rgba(3, 8, 15, .08)),
+    url("https://images-assets.nasa.gov/image/art002e012278/art002e012278~large.jpg")
+    center / cover no-repeat;
+}
+
+.hero-content {
+  padding-top: 1rem;
+}
+
+.eyebrow {
+  color: #dce6ef;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .18em;
+}
+
+.text-red {
+  color: var(--red);
+}
+
+.hero h1,
+.section-title,
+.mission-card strong,
+.news-body h3,
+.quote-band h2 {
+  font-family: "Barlow Condensed", Impact, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0 0 1.5rem;
+  font-size: clamp(4rem, 9vw, 8rem);
+  line-height: .9;
+}
+
+.hero-copy {
+  max-width: 490px;
+  color: #e4e8ed;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.btn-nasa {
+  padding: .8rem 1.25rem;
+  border: 0;
+  border-radius: 2px;
+  background: var(--red);
+  color: white;
+  font-size: .8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.btn-nasa:hover {
+  background: #bd202c;
+  color: white;
+}
+
+.hero-caption {
+  position: absolute;
+  right: 2rem;
+  bottom: 1rem;
+  font-size: .7rem;
+}
+
+.mission-strip {
+  background: #f5f6f7;
+}
+
+.section-title {
+  font-size: clamp(2rem, 3vw, 2.8rem);
+}
+
+.mission-card {
+  position: relative;
+  display: flex;
+  min-height: 190px;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.35rem 1.5rem;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-decoration: none;
+}
+
+.mission-card::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(0deg, rgba(0, 0, 0, .8), transparent);
+}
+
+.mission-card span,
+.mission-card strong {
+  position: relative;
+}
+
+.mission-card span {
+  font-size: .62rem;
+  font-weight: 700;
+  letter-spacing: .15em;
+}
+
+.mission-card strong {
+  font-size: 2rem;
+}
+
+.moon,
+.earth {
+  background-image: url("https://images-assets.nasa.gov/image/iss069e012170/iss069e012170~large.jpg");
+}
+
+.webb {
+  background-image: url("https://images-assets.nasa.gov/image/PIA04921/PIA04921~large.jpg");
+}
+
+.text-link {
+  color: #101820;
+  font-size: .8rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  color: var(--red);
+}
+
+.news-card {
+  display: block;
+  height: 100%;
+  background: white;
+  box-shadow: 0 5px 24px #07101d12;
+  color: inherit;
+  text-decoration: none;
+}
+
+.news-card img {
+  display: block;
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.news-body {
+  padding: 1.4rem;
+}
+
+.news-body h3 {
+  font-size: 1.7rem;
+}
+
+.news-body p:not(.eyebrow) {
+  color: #56616c;
+  font-size: .88rem;
+  line-height: 1.6;
+}
+
+.quote-band {
+  color: white;
+  background:
+    linear-gradient(90deg, rgba(4, 10, 18, .92), rgba(4, 10, 18, .64)),
+    url("https://images-assets.nasa.gov/image/PIA04921/PIA04921~large.jpg")
+    center / cover;
+}
+
+.quote-band h2 {
+  font-size: clamp(2.4rem, 6vw, 5rem);
+  line-height: .98;
+}
+
+.site-footer {
+  background: var(--navy);
+  color: white;
+}
+
+.footer-tagline {
+  color: #c7d0d9;
+  line-height: 1.65;
+}
+
+.site-footer h2 {
+  color: #aebbc8;
+  font-size: .72rem;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
+.site-footer a {
+  display: block;
+  margin: .55rem 0;
+  color: #e3e8ee;
+  font-size: .85rem;
+  text-decoration: none;
+}
+
+.site-footer a:hover,
+.footer-cta {
+  color: #ff5961;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border-top: 1px solid #ffffff2b;
+  color: #aebbc8;
+  font-size: .72rem;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    padding: 1rem 0;
+  }
+
+  .search-form {
+    max-width: 100%;
+  }
+
+  .hero {
+    height: 70vh;
+    min-height: 540px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero {
+    height: 74vh;
+    min-height: 550px;
+    background-position: 57% center;
+  }
+
+  .hero h1 {
+    font-size: 4.5rem;
+  }
+
+  .hero-copy {
+    font-size: .98rem;
+  }
+
+  .mission-card {
+    min-height: 165px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+}
+``
